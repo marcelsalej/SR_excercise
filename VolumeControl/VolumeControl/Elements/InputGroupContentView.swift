@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct InputGroupContentView: View {
+    // Property wrappers
     @Binding var enteredText: String
     @Binding var numberOfLines: String
+    
+    // Button callbacks
     var didEndEditingLevel: (() -> Void)?
     var didEndEditingLines: (() -> Void)?
+    
+    // MARK: - Main body
     
     var body: some View {
         VStack(spacing: 10.0) {
@@ -31,6 +36,7 @@ struct InputGroupContentView: View {
     }
 }
 
+// MARK: - Preview
 
 #if DEBUG
 struct InputGroupContentView_Previews: PreviewProvider {

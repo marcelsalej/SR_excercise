@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct GraySubmitButton: View {
+    // Button parameters
     let title: String
     let action: () -> Void
+    
+    // MARK: - Main body
     
     var body: some View {
         Button(title, action: action)
@@ -23,6 +26,7 @@ struct GraySubmitButton: View {
     }
 }
 
+// MARK: - Preview
 
 #if DEBUG
 struct GraySubmitButton_Previews: PreviewProvider {
