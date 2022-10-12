@@ -14,6 +14,8 @@
 		344351E128F6C0FE00C362E6 /* VolumeControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344351E028F6C0FE00C362E6 /* VolumeControlTests.swift */; };
 		344351EB28F6C0FE00C362E6 /* VolumeControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344351EA28F6C0FE00C362E6 /* VolumeControlUITests.swift */; };
 		344351ED28F6C0FE00C362E6 /* VolumeControlUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344351EC28F6C0FE00C362E6 /* VolumeControlUITestsLaunchTests.swift */; };
+		344351FB28F6C18900C362E6 /* GraySubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344351FA28F6C18900C362E6 /* GraySubmitButton.swift */; };
+		3443520028F6C59B00C362E6 /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344351FF28F6C59B00C362E6 /* InputTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		344351E628F6C0FE00C362E6 /* VolumeControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolumeControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		344351EA28F6C0FE00C362E6 /* VolumeControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeControlUITests.swift; sourceTree = "<group>"; };
 		344351EC28F6C0FE00C362E6 /* VolumeControlUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeControlUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		344351FA28F6C18900C362E6 /* GraySubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraySubmitButton.swift; sourceTree = "<group>"; };
+		344351FF28F6C59B00C362E6 /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 		344351CE28F6C0FC00C362E6 /* VolumeControl */ = {
 			isa = PBXGroup;
 			children = (
+				344351FC28F6C3D500C362E6 /* Extensions */,
+				344351F928F6C17400C362E6 /* Elements */,
 				344351CF28F6C0FC00C362E6 /* VolumeControlApp.swift */,
 				344351D128F6C0FC00C362E6 /* ContentView.swift */,
 				344351D328F6C0FD00C362E6 /* Assets.xcassets */,
@@ -125,6 +131,22 @@
 				344351EC28F6C0FE00C362E6 /* VolumeControlUITestsLaunchTests.swift */,
 			);
 			path = VolumeControlUITests;
+			sourceTree = "<group>";
+		};
+		344351F928F6C17400C362E6 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				344351FA28F6C18900C362E6 /* GraySubmitButton.swift */,
+				344351FF28F6C59B00C362E6 /* InputTextField.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		344351FC28F6C3D500C362E6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3443520028F6C59B00C362E6 /* InputTextField.swift in Sources */,
+				344351FB28F6C18900C362E6 /* GraySubmitButton.swift in Sources */,
 				344351D228F6C0FC00C362E6 /* ContentView.swift in Sources */,
 				344351D028F6C0FC00C362E6 /* VolumeControlApp.swift in Sources */,
 			);
