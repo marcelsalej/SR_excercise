@@ -18,6 +18,7 @@
 		3443520028F6C59B00C362E6 /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344351FF28F6C59B00C362E6 /* InputTextField.swift */; };
 		3443520528F6CB0000C362E6 /* InputGroupContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3443520428F6CB0000C362E6 /* InputGroupContentView.swift */; };
 		3443520728F6F64B00C362E6 /* MeterItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3443520628F6F64B00C362E6 /* MeterItemButton.swift */; };
+		3495370B28F75A0F0069C917 /* TextField+Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3495370A28F75A0F0069C917 /* TextField+Extra.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		344351FF28F6C59B00C362E6 /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
 		3443520428F6CB0000C362E6 /* InputGroupContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputGroupContentView.swift; sourceTree = "<group>"; };
 		3443520628F6F64B00C362E6 /* MeterItemButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterItemButton.swift; sourceTree = "<group>"; };
+		3495370A28F75A0F0069C917 /* TextField+Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Extra.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 		344351FC28F6C3D500C362E6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3495370A28F75A0F0069C917 /* TextField+Extra.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			files = (
 				3443520028F6C59B00C362E6 /* InputTextField.swift in Sources */,
 				3443520528F6CB0000C362E6 /* InputGroupContentView.swift in Sources */,
+				3495370B28F75A0F0069C917 /* TextField+Extra.swift in Sources */,
 				3443520728F6F64B00C362E6 /* MeterItemButton.swift in Sources */,
 				344351FB28F6C18900C362E6 /* GraySubmitButton.swift in Sources */,
 				344351D228F6C0FC00C362E6 /* ContentView.swift in Sources */,

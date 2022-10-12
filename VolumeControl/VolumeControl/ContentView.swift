@@ -9,15 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     // Property wrappers
+    
     @State private var volumeLevel: String = ""
     @State private var lineNum: String = ""
     @State var lineNumInt: Int = 0
     @State var levelNumberDouble: Double = 0.0
+    
     // MARK: - Main body
     
     var body: some View {
-        
-        
         VStack {
             InputGroupContentView(enteredText: $volumeLevel, numberOfLines: $lineNum, didEndEditingLevel: {
                 // level
@@ -44,30 +44,33 @@ struct ContentView: View {
             
             GeometryReader { r in
                 ScrollView(.vertical, showsIndicators: false) {
-                    
                     VStack(alignment: .center, spacing: 15) {
                         let fillToIndex = calculateFillIndex(allLines: lineNumInt, volumeLevel: levelNumberDouble)
                         ForEach((0..<lineNumInt).reversed(), id: \.self) { index in
-                            MeterItemButton(isSelected: index < fillToIndex, index: index, didTapButton: { index in
-                                calculateFillIndex(for: Double(index), allLines: Double(lineNumInt))
-                                
-                            }).frame(maxWidth: r.size.width / 2, maxHeight: r.size.height, alignment: .center)
-                        }
+                                MeterItemButton(isSelected: index < fillToIndex, index: index, didTapButton: { index in
+                                    calculateFillIndex(for: Double(index), allLines: Double(lineNumInt))
+                                }).frame(maxWidth: r.size.width / 2, maxHeight: r.size.height, alignment: .center)
+                            }
+                        Text(volumeLevel.isEmpty ? "" : String(format: "Volume set at: %@ ", volumeLevel).appending("%"))
                     }
-                    
                 }.frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
     }
 }
+
+// MARK: - Helper methods
+
 extension  ContentView {
     func calculateFillIndex(for index: Double, allLines: Double) {
-        let percentage = ((index/allLines) * 100).rounded()
+        let percentage = (((index + 1)/allLines) * 100).rounded()
+        let lineNumberValue = lineNumInt
         levelNumberDouble = 0
         lineNumInt = 0
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
-            levelNumberDouble = Double(percentage) ?? 0
-            lineNumInt = Int(lineNum) ?? 0
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
+            levelNumberDouble = Double(percentage)
+            volumeLevel = String(Int(percentage))
+            lineNumInt = lineNumberValue
         }
     }
     

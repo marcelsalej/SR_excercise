@@ -22,7 +22,7 @@ struct InputTextField: View {
             self.lineColor = didBeginEditing ? Color.red : Color.gray.opacity(0.2)
             
         })
-        .underline(true, pattern: .solid, color: lineColor)
+        .underlineTextField()
     }
 }
 
