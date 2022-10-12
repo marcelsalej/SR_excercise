@@ -13,7 +13,9 @@ struct GraySubmitButton: View {
     
     var body: some View {
         Button(title, action: action)
-            .padding(.all, 20)
+            .frame(minWidth: 0, maxWidth: .infinity)
+            .padding([.leading, .trailing], 20)
+            .padding([.top, .bottom], 10)
             .foregroundColor(.black)
             .background(Color.gray.opacity(0.2))
             .font(.system(size: 14, weight: .regular, design: .default))

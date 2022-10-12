@@ -16,6 +16,7 @@
 		344351ED28F6C0FE00C362E6 /* VolumeControlUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344351EC28F6C0FE00C362E6 /* VolumeControlUITestsLaunchTests.swift */; };
 		344351FB28F6C18900C362E6 /* GraySubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344351FA28F6C18900C362E6 /* GraySubmitButton.swift */; };
 		3443520028F6C59B00C362E6 /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344351FF28F6C59B00C362E6 /* InputTextField.swift */; };
+		3443520528F6CB0000C362E6 /* InputGroupContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3443520428F6CB0000C362E6 /* InputGroupContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		344351EC28F6C0FE00C362E6 /* VolumeControlUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeControlUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		344351FA28F6C18900C362E6 /* GraySubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraySubmitButton.swift; sourceTree = "<group>"; };
 		344351FF28F6C59B00C362E6 /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
+		3443520428F6CB0000C362E6 /* InputGroupContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputGroupContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				344351FA28F6C18900C362E6 /* GraySubmitButton.swift */,
 				344351FF28F6C59B00C362E6 /* InputTextField.swift */,
+				3443520428F6CB0000C362E6 /* InputGroupContentView.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3443520028F6C59B00C362E6 /* InputTextField.swift in Sources */,
+				3443520528F6CB0000C362E6 /* InputGroupContentView.swift in Sources */,
 				344351FB28F6C18900C362E6 /* GraySubmitButton.swift in Sources */,
 				344351D228F6C0FC00C362E6 /* ContentView.swift in Sources */,
 				344351D028F6C0FC00C362E6 /* VolumeControlApp.swift in Sources */,
