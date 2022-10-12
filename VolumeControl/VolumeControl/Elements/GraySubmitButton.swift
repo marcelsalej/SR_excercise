@@ -16,7 +16,7 @@ struct GraySubmitButton: View {
     
     var body: some View {
         Button(title, action: action)
-            .frame(minWidth: 0, maxWidth: .infinity)
+            .frame(minWidth: 0, maxWidth: .infinity, maxHeight: 35)
             .padding([.leading, .trailing], 20)
             .padding([.top, .bottom], 10)
             .foregroundColor(.black)
